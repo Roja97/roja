@@ -7,13 +7,7 @@ public class CreateOrganisationTest {
 @Test
 public void createOrganisation() {
 	System.out.println("organisation is created");
-	
-	
-	
-	
-	
-	
-	
 	System.out.println("organisation is created1");
+	System.out.println("============================");
 }
 }
