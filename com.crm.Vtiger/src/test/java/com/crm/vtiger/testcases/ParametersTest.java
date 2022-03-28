@@ -24,27 +24,23 @@ public class ParametersTest {
 		System.out.println(USERNAME);
 		String PASSWORD = System.getProperty("password");
 		System.out.println(PASSWORD);
-		WebDriver driver=null;
-		if(BROWSER.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
-		}else if(BROWSER.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
-		}else {
-			System.out.println("mention valid browser");
-		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		driver.get(URL);
-		driver.findElement(By.name("user_name")).sendKeys(USERNAME);
-		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
-		driver.findElement(By.id("submitButton")).click();
-		Actions action=new Actions(driver);
-		WebElement path = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-		action.moveToElement(path).perform();
-		driver.findElement(By.linkText("Sign Out")).click();
-		driver.quit();
+		//WebDriver driver=null;
+		/*
+		 * if(BROWSER.equalsIgnoreCase("chrome")) {
+		 * WebDriverManager.chromedriver().setup(); driver=new ChromeDriver(); }else
+		 * if(BROWSER.equalsIgnoreCase("firefox")) {
+		 * WebDriverManager.firefoxdriver().setup(); driver=new FirefoxDriver(); }else {
+		 * System.out.println("mention valid browser"); }
+		 * driver.manage().window().maximize();
+		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 * 
+		 * driver.get(URL); driver.findElement(By.name("user_name")).sendKeys(USERNAME);
+		 * driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
+		 * driver.findElement(By.id("submitButton")).click(); Actions action=new
+		 * Actions(driver); WebElement path =
+		 * driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
+		 * action.moveToElement(path).perform();
+		 * driver.findElement(By.linkText("Sign Out")).click(); driver.quit();
+		 */
 	}
 }
