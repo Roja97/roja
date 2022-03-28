@@ -6,6 +6,15 @@ public class NewTest {
 	@Test
 	public void newTest() {
 		System.out.println("test is created");
+		System.out.println("test is created1");
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
