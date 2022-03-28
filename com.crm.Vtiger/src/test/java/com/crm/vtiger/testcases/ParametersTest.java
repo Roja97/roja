@@ -45,6 +45,16 @@ public class ParametersTest {
 		WebElement path = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
 		action.moveToElement(path).perform();
 		driver.findElement(By.linkText("Sign Out")).click();
+		System.out.println("program is successfull");
+		
+		
+		
+		
+		
+
 		driver.quit();
+		
+		
+	
 	}
 }
